@@ -41,10 +41,19 @@ let populateAllUsers = () => {
 
 // populate Select element with name of each user and value of ID
 let loadUserSelect = (arrayOfUsers) => {
+    // appending default option to select element
+    let defaultOption = document.createElement('option');
+    defaultOption.value = '';
+    defaultOption.textContent = 'Select User';
+    defaultOption.selected = true;
+    selectEl.appendChild(defaultOption);
+    
+    // loop through array of users and append user names to select element
     arrayOfUsers.forEach((userDetail)=> {
         let option = document.createElement('option');
         option.value = userDetail.id;
         option.textContent = userDetail.name;
         selectEl.appendChild(option);
     })
+    
 }
