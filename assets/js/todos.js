@@ -26,6 +26,7 @@ let populateAllUsers = () => {
 
         // When you select an option display the selected users todo tasks
         selectEl.onchange = () => {
+            divContainer.innerHTML='';
             let selectedUser = selectEl.value;
             console.log(selectedUser)
             fetch(`${apiTodoIdLink}/${selectedUser}`)
@@ -35,16 +36,16 @@ let populateAllUsers = () => {
                 
                 allTaskDetails.forEach((taskDetail)=> {
                     let task = document.createElement('div');
+                    console.log(task)
                     
-                    console.log(taskDetail.description);
                     task.innerHTML = `
-                        <div>
+                        
                             <h3>Task: ${taskDetail.description}</h3>
                             <h3>Category: ${taskDetail.category}</h3>
                             <h3>Priority: ${taskDetail.priority}</h3>
                             <h3>Deadline by: ${taskDetail.deadline}</h3>
                             <h3>Completed Status: ${taskDetail.completed}</h3>
-                        </div>
+                    
                     `;
                     divContainer.appendChild(task);
                     
