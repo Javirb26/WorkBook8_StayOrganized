@@ -64,7 +64,7 @@
 }
 
 .container-bg-img {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/frontend/assets/images/hero-img.png");
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/frontend/assets/images/hero_img.png");
     background-size: cover;
     background-position: center;
     min-height: 70vh; 
