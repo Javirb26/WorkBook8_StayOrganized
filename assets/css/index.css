@@ -1,10 +1,82 @@
 :root {
+    --lavendar: #E6E6FA;
+    --whiteSmoke : #F5F5FF;
+    --semiGray: #c2c2cc1b;
+    --darkPink: #B39EB5;
+    --charcoal: #2C2C2C;
+    --lightPurple: #C8C8DB;
+    --pastelPink: #D8BFD8;
+    --grayPink: #776178;
+
     --indigo: #32127A;
     --softPink: #FFC9F8;
-    --lavendar: #DDD1FF;
     --slateBlue: #6A5ACD;
     --teal: #00C9B7;
     --rose: #FFC3DA;
+}
+
+.white-smoke {
+    background-color: var(--whiteSmoke);
+}
+
+.text-white-smoke {
+    color: var(--whiteSmoke);
+}
+
+.semi-gray {
+    background-color: var(--semiGray);
+}
+
+.text-semi-gray {
+    color: var(--semiGray);
+}
+
+.dark-pink {
+    background-color: var(--darkPink);
+}
+
+.text-dark-pink {
+    color: var(--darkPink);
+}
+
+.charcoal {
+    background-color: var(--charcoal);
+}
+
+.text-charcoal {
+    color: var(--charcoal);
+}
+
+.light-purple {
+    background-color: var(--lightPurple);
+}
+
+.text-light-purple {
+    color: var(--lightPurple);
+}
+
+.lavendar{
+    background-color: var(--lavendar) !important;
+} 
+
+.text-lavendar {
+    color: var(--lavendar) !important;
+}
+
+.pastel-pink {
+    background-color: var(--pastelPink);
+}
+
+.text-pastel-pink {
+    color: var(--pastelPink);
+}
+
+.gray-pink {
+    background-color: var(--grayPink);
+}
+
+.text-gray-pink {
+    color: var(--grayPink);
 }
 
 .indigo {
@@ -21,14 +93,6 @@
 
 .text-softPink {
     color: var(--softPink) !important;
-}
-
-.lavendar{
-    background-color: var(--lavendar) !important;
-} 
-
-.text-lavendar {
-    color: var(--lavendar) !important;
 }
 
 .slateBlue {
@@ -56,7 +120,7 @@
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: var(--teal) !important;
+    background-color: var(--pastelPink) !important;
 }
 
 .form-control::-webkit-input-placeholder {
