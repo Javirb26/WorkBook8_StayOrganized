@@ -30,6 +30,9 @@ http://localhost:8083/api/todos/byuser/${id}
 # Create ${todos.html} a page that allows user to view all ToDos
 
 - display all todo tasks
+    - http://localhost:8083/api/todos - all todos
+    - http://localhost:8083/api/users - all users
+    - http://localhost:8083/api/todos/byuser/${id} - todo of user by id
 
 # Create a ${new_todo.html}
 
