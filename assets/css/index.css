@@ -1,0 +1,90 @@
+:root {
+    --indigo: #32127A;
+    --softPink: #FFC9F8;
+    --lavendar: #DDD1FF;
+    --slateBlue: #6A5ACD;
+    --teal: #00C9B7;
+    --rose: #FFC3DA;
+}
+
+.indigo {
+    background-color: var(--indigo) !important;
+}
+
+.text-indigo {
+    color: var(--indigo) !important;
+}
+
+.softPink {
+    background-color: var(--softPink) !important;
+}
+
+.text-softPink {
+    color: var(--softPink) !important;
+}
+
+.lavendar{
+    background-color: var(--lavendar) !important;
+} 
+
+.text-lavendar {
+    color: var(--lavendar) !important;
+}
+
+.slateBlue {
+    background: var(--slateBlue) !important;
+}
+
+.text-slateBlue {
+    color: var(--slateBlue) !important;
+}
+
+.teal {
+    background-color: var(--teal) !important;
+}
+
+.text-teal {
+    color: var(--teal) !important;
+}
+
+.rose {
+    background-color: var(--rose) !important;
+}
+
+.text-rose {
+    color: var(--rose) !important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: var(--teal) !important;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: indigo;
+}
+
+.container-bg-img {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/frontend/assets/images/hero-img.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh; 
+};
+
+.header-column div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#main div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    flex: 1;
+    padding: 10px;
+  }
