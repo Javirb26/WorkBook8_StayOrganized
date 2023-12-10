@@ -2,17 +2,21 @@
     --lavendar: #E6E6FA;
     --whiteSmoke: : #F5F5FF;
     --semiGray: #c2c2cc33;
-    --darkPink: #B39EB5;
     --charcoal: #2C2C2C;
-    --lightPurple: #C8C8DB;
-    --pastelPink: #D8BFD8;
-    --grayPink: #776178;
+    --robinEggBlue: #00C6C2;
+    --outerSpace: #435058;
+   
+    
+    
+    
+}
 
-    --indigo: #32127A;
-    --softPink: #FFC9F8;
-    --slateBlue: #6A5ACD;
-    --teal: #00C9B7;
-    --rose: #FFC3DA;
+.lavendar{
+    background-color: var(--lavendar) !important;
+} 
+
+.text-lavendar {
+    color: var(--lavendar) !important;
 }
 
 .white-smoke {
@@ -31,14 +35,6 @@
     color: var(--semiGray);
 }
 
-.dark-pink {
-    background-color: var(--darkPink);
-}
-
-.text-dark-pink {
-    color: var(--darkPink);
-}
-
 .charcoal {
     background-color: var(--charcoal);
 }
@@ -47,84 +43,29 @@
     color: var(--charcoal);
 }
 
-.light-purple {
-    background-color: var(--lightPurple);
+
+.robinEggBlue {
+    background-color: var(--robinEggBlue);
 }
 
-.text-light-purple {
-    color: var(--lightPurple);
+.text-robinEggBlue {
+    color: var(--robinEggBlue) ;
 }
 
-.lavendar{
-    background-color: var(--lavendar) !important;
-} 
-
-.text-lavendar {
-    color: var(--lavendar) !important;
+.--outerSpace {
+    background-color: var(--outerSpace);
 }
 
-.pastel-pink {
-    background-color: var(--pastelPink);
-}
-
-.text-pastel-pink {
-    color: var(--pastelPink);
-}
-
-.gray-pink {
-    background-color: var(--grayPink);
-}
-
-.text-gray-pink {
-    color: var(--grayPink);
-}
-
-.indigo {
-    background-color: var(--indigo) !important;
-}
-
-.text-indigo {
-    color: var(--indigo) !important;
-}
-
-.softPink {
-    background-color: var(--softPink) !important;
-}
-
-.text-softPink {
-    color: var(--softPink) !important;
-}
-
-.slateBlue {
-    background: var(--slateBlue) !important;
-}
-
-.text-slateBlue {
-    color: var(--slateBlue) !important;
-}
-
-.teal {
-    background-color: var(--teal) !important;
-}
-
-.text-teal {
-    color: var(--teal) !important;
-}
-
-.rose {
-    background-color: var(--rose) !important;
-}
-
-.text-rose {
-    color: var(--rose) !important;
+.--outerSpace {
+    color: var(--outerSpace);
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: var(--pastelPink) !important;
+    background-color: var(--robinEggBlue) !important;
 }
 
 .btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
-    background-color: var(--grayPink) !important;
+    background-color: var(--outerSpace) !important;
 }
 
 .form-control::-webkit-input-placeholder {
