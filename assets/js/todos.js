@@ -12,7 +12,13 @@ select element / dropdown
 */
 
 window.onload = () => {
-   populateAllUsers();
+   populateAllUsers(); 
+   populateSelectedUsers();
+
+   // View all users again after selecting specific user   
+   const viewAllBtn = document.getElementById('view-all-btn');
+   viewAllBtn.onclick = populateAllUsers;
+
 }
 
  // grab div container and select el
@@ -20,6 +26,7 @@ window.onload = () => {
  const selectEl = document.getElementById('user-select');
  const apiUserLink = 'http://localhost:8083/api/users';
  const apiTodoIdLink = 'http://localhost:8083/api/todos/byuser'
+ const apiLoadTodosLink = 'http://localhost:8083/api/todos'
 
  const userImages = {
     1: 'assets/images/study_todo.png',
@@ -40,7 +47,7 @@ window.onload = () => {
 
 
 //  Populate Select Element options and add Todos of users on click
-let populateAllUsers = () => {
+let populateSelectedUsers = () => {
 
         // When you select an option display the selected users todo tasks
         selectEl.onchange = () => {
@@ -52,7 +59,7 @@ let populateAllUsers = () => {
             .then((allTaskDetails)=>{
                 // if there is no task then display error message
                 if(allTaskDetails.length === 0){
-                    divContainer.innerHTML = '<p class="fs-2 fw-bold text-center">No Task(s) Here</p>'
+                    divContainer.innerHTML = '<p class="fs-2 fw-bold text-center text-robinEggBlue">No Task(s) Here</p>'
                 }
                 
                 allTaskDetails.forEach((taskDetail)=> {
@@ -94,6 +101,33 @@ let populateAllUsers = () => {
             // call loadUserSelect to populate Select Element
             loadUserSelect(allUserDetails);
         }) .catch((err) => console.error(err))
+}
+
+let populateAllUsers = () => {
+    divContainer.innerHTML='';
+    fetch(apiLoadTodosLink)
+        .then((res)=>res.json())
+        .then((allTodoDetails)=>{
+            console.log(allTodoDetails);
+            allTodoDetails.forEach((todoDetail)=>{
+                console.log(todoDetail);
+                let todo = document.createElement('div');
+                todo.classList.add('col-md-4', 'col-lg-3');
+                todo.innerHTML = `
+                    <div class='card h-100'>
+                        <img src='${userImages[todoDetail.id]}' alt=''>
+                        <div class='card-body'>
+                            <h3 class="card-title">Task: ${todoDetail.description}</h3>
+                            <p class="card-text">Category: ${todoDetail.category}</p>
+                            <p class="card-text">Priority: ${todoDetail.priority}</p>
+                            <p class="card-text">Deadline by: <span class="fw-bold">${todoDetail.deadline}</span></p>
+                            <p class="card-text">Completed Status: ${todoDetail.completed}</p>
+                        </div>
+                    </div>
+                `;
+                divContainer.appendChild(todo)
+            })
+        })
 }
 
 
