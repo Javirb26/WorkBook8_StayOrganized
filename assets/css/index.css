@@ -123,6 +123,10 @@
     background-color: var(--pastelPink) !important;
 }
 
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+    background-color: var(--grayPink) !important;
+}
+
 .form-control::-webkit-input-placeholder {
     color: indigo;
 }
