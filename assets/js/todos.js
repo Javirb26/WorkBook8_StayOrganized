@@ -72,11 +72,11 @@ let populateSelectedUsers = () => {
                     <div class='card h-100'>
                         <img src='${userImages[taskDetail.id]}' class="card-img-top" alt='image #${taskDetail.id}'>
                         <div class="card-body" >
-                            <h3 class="card-title">Task: ${taskDetail.description}</h3>
-                            <p class="card-text">Category: ${taskDetail.category}</p>
-                            <p class="card-text">Priority: ${taskDetail.priority}</p>
-                            <p class="card-text">Deadline by: <span class="fw-bold">${taskDetail.deadline}</span></p>
-                            <p class="card-text">Completed Status: ${taskDetail.completed}</p>
+                            <h3 class="card-title text-outerSpace">Task: ${taskDetail.description}</h3>
+                            <p class="card-text text-outerSpace">Category: ${taskDetail.category}</p>
+                            <p class="card-text text-outerSpace">Priority: ${taskDetail.priority}</p>
+                            <p class="card-text text-robinEggBlue">Deadline by: <span class="fw-bold">${taskDetail.deadline}</span></p>
+                            <p class="card-text text-outerSpace">Completed Status: ${taskDetail.completed}</p>
                         </div>
                     </div>
                     `;
