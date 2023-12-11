@@ -1,4 +1,5 @@
 
+## <a href="https://javirb26.github.io/WorkBook8_StayOrganized/">Visit site</a>
 # Stay Organized - ToDo List Web Application
 
 ## Overview
@@ -34,9 +35,8 @@ Priority: "Medium"
 
 2. Adding Tasks: Provide a simple and efficient interface for users to add new tasks to their list.
 
-3. 
+3. Creating User: Allow users to sign up or create a user to then add todo tasks to later on.
 
-4. 
 ## Screenshots
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
@@ -44,79 +44,18 @@ Priority: "Medium"
 
 ## Technologies Used
 
-* [List of front-end technologies/languages]
-* [Back-end technologies/languages]
-* [Database management system]
-* [Any other relevant technologies or libraries]
-## Demo
-
-Insert gif or link to demo
-
-
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://link-to-project
-```
-
-Go to the project directory
-
-```bash
-  cd my-project
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run start
-```
-
-
-## API Reference
-
-#### Get all items
-
-```http
-  GET /api/items
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
-
-#### Get item
-
-```http
-  GET /api/items/${id}
-```
-
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
-
-#### add(num1, num2)
-
-Takes two numbers and returns the sum.
-
+* [JavaScript, CSS3, HTML5, Bootstrap]
 
 ## Color Refrence
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Deep Purple | ![#32127A](https://via.placeholder.com/10/32127A?text=+) #32127A |
-| Soft Pink | ![#FFC9F8](https://via.placeholder.com/10/FFC9F8?text=+) #FFC9F8 |
-| Light Lavendar| ![#DDD1FF](https://via.placeholder.com/10/DDD1FF?text=+) #DDD1FF |
-| Vibrant Teal | ![#00C9B7](https://via.placeholder.com/10/00C9B7?text=+) #00C9B7 |
-| Pale Rose | ![#FFC3DA](https://via.placeholder.com/10/FFC3DA?text=+) #FFC3DA |
-
+| Pale Lavendar | ![#E6E6FA](https://via.placeholder.com/10/E6E6FA?text=+) #E6E6FA |
+| White Smoke | ![#F5F5FF](https://via.placeholder.com/10/F5F5FF?text=+) #F5F5FF |
+| Semi Gray| ![#c2c2cc33](https://via.placeholder.com/10/c2c2cc33?text=+) #c2c2cc33 |
+| Charcoal | ![#2C2C2C](https://via.placeholder.com/10/2c2c2c?text=+) #2C2C2C |
+| Robin Egg Blue | ![#00C6C2](https://via.placeholder.com/10/00C6C2?text=+) #00C6C2 |
+| Outer Space | ![#435058](https://via.placeholder.com/10/435058?text=+) #435058 |
 
 ## Authors
 
