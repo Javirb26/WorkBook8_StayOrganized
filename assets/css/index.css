@@ -1,10 +1,69 @@
 :root {
     --lavendar: #E6E6FA;
-    --whiteSmoke: : #F5F5FF;
+    --whiteSmoke: #F5F5FF;
     --semiGray: #c2c2cc33;
     --charcoal: #2C2C2C;
     --robinEggBlue: #00C6C2;
     --outerSpace: #435058;
+}
+
+body {
+    font-family: 'Lato', Helvetica !important;
+}
+
+nav a {
+    font-size: 18px !important;
+}
+
+.container-bg-img {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/hero-image.png");
+    background-size: contain;
+    background-position: center;
+    min-height: 70vh; 
+};
+
+.checklist-img {
+    width: 100%;
+    height: 400px;
+    background-image: url('assets/images/checklist.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+.header-column div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#main div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1;
+    padding: 10px;
+}
+
+.create-user {
+    width: 24%;
+    padding: 50px;
+    background-image: linear-gradient(to left bottom, #00c6c2, #56cee4, #93d5f7, #c4dcfc, #e6e6fa);
+}
+
+.new-btn {
+    width: 100%;
+}
+
+@media only screen and (max-width:600px){
+    .create-user {
+        width: 100%;
+    }
 }
 
 .lavendar{
@@ -16,7 +75,7 @@
 }
 
 .white-smoke {
-    background-color: var(--whiteSmoke);
+    background-color: var(--whiteSmoke) !important;
 }
 
 .text-white-smoke {
@@ -48,11 +107,11 @@
     color: var(--robinEggBlue) ;
 }
 
-.--outerSpace {
+.outerSpace {
     background-color: var(--outerSpace);
 }
 
-.--outerSpace {
+.outerSpace {
     color: var(--outerSpace);
 }
 
@@ -63,45 +122,3 @@
 .btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
     background-color: var(--outerSpace) !important;
 }
-
-.form-control::-webkit-input-placeholder {
-    color: var(--indigo);
-}
-
-.container-bg-img {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/hero-image.png");
-    background-size: contain;
-    background-position: center;
-    min-height: 70vh; 
-};
-
-.checklist-img {
-    width: 100%;
-    height: 400px;
-    background-image: url('assets/images/checklist.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  
-  
-
-.header-column div{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    flex: 1;
-    border: 1px solid black;
-    padding: 10px;
-}
-
-#main div{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    flex: 1;
-    padding: 10px;
-  }
