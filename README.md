@@ -39,8 +39,17 @@ Priority: "Medium"
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### Home 
+<img src="assets/screenshot/scIndex.jpeg" style='width: 500px'>
 
+### Todos
+<img src="assets/screenshot/scTodos.jpeg" style='width: 500px'>
+
+### Create Todo
+<img src="assets/screenshot/scNewTodo.jpeg" style='width: 500px'>
+
+### Sign Up
+<img src="assets/screenshot/scNewUser.jpeg" style='width: 500px'>
 
 ## Technologies Used
 
