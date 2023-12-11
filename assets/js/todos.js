@@ -28,23 +28,39 @@ window.onload = () => {
  const apiTodoIdLink = 'http://localhost:8083/api/todos/byuser'
  const apiLoadTodosLink = 'http://localhost:8083/api/todos'
 
- const userImages = {
-    1: 'assets/images/study_todo.png',
-    2: 'assets/images/temu_shrek.png',
-    3: 'assets/images/v_bucks.png',
-    4: 'assets/images/dog_bath.png',
-    5: 'assets/images/office_supplies.png',
-    6: 'assets/images/war_peace.png',
-    7: 'assets/images/folded_laundry.png',
-    8: 'assets/images/v_bucks.png',
-    9: 'assets/images/goat_haul.png',
-    10: 'assets/images/broken_swing.png',
-    11: 'assets/images/painting_fence.png',
-    12: 'assets/images/re_landscape.png',
-    13: 'assets/images/temu_tiktok_shrek.png',
-    14: 'assets/images/airport.png',
-};
+//  const userImages = {
+//     1: 'assets/images/study_todo.png',
+//     2: 'assets/images/temu_shrek.png',
+//     3: 'assets/images/v_bucks.png',
+//     4: 'assets/images/dog_bath.png',
+//     5: 'assets/images/office_supplies.png',
+//     6: 'assets/images/war_peace.png',
+//     7: 'assets/images/folded_laundry.png',
+//     8: 'assets/images/v_bucks.png',
+//     9: 'assets/images/goat_haul.png',
+//     10: 'assets/images/broken_swing.png',
+//     11: 'assets/images/painting_fence.png',
+//     12: 'assets/images/re_landscape.png',
+//     13: 'assets/images/temu_tiktok_shrek.png',
+//     14: 'assets/images/airport.png',
+// };
 
+const categoryImages = {
+    "Personal Task": "assets/images/dog_bath.png",
+    "1": "assets/images/dog_bath.png",
+    "Household Task": "assets/images/folded_laundry.png",
+    "2": "assets/images/folded_laundry.png",
+    "Financial Task": "assets/images/v_bucks.png",
+    "3": "assets/images/v_bucks.png",
+    "Help Others": "assets/images/painting_fence.png",
+    "4": "assets/images/painting_fence.png",
+    "Errand": "assets/images/airport.png",
+    "Errands": "assets/images/airport.png",
+    "5": "assets/images/airport.png",
+    "Work Task": "assets/images/office_supplies.png",
+    "6": "assets/images/office_supplies.png"
+  };
+  
 
 //  Populate Select Element options and add Todos of users on click
 let populateSelectedUsers = () => {
@@ -65,12 +81,14 @@ let populateSelectedUsers = () => {
                 allTaskDetails.forEach((taskDetail)=> {
                     console.log(taskDetail)
                     console.log(taskDetail.id)
+                    const category = taskDetail.category;
+                    const imageURL = categoryImages[category] || 'assets/images/default_image.png';
                     let task = document.createElement('div');
                     task.classList.add('col-md-4', 'col-lg-3')
                     
                         task.innerHTML = `
                     <div class='card h-100'>
-                        <img src='${userImages[taskDetail.id]}' class="card-img-top" alt='image #${taskDetail.id}'>
+                        <img src='${imageURL}' class="card-img-top" alt='image #${taskDetail.id}'>
                         <div class="card-body" >
                             <h3 class="card-title text-outerSpace">Task: ${taskDetail.description}</h3>
                             <p class="card-text text-outerSpace">Category: <span class="fw-bold text-outerSpace">${taskDetail.category}</span></p>
@@ -111,11 +129,13 @@ let populateAllUsers = () => {
             console.log(allTodoDetails);
             allTodoDetails.forEach((todoDetail)=>{
                 console.log(todoDetail);
+                const category = todoDetail.category;
+                const imageURL = categoryImages[category] || 'assets/images/default_image.png';
                 let todo = document.createElement('div');
                 todo.classList.add('col-md-4', 'col-lg-3');
                 todo.innerHTML = `
                     <div class='card h-100'>
-                        <img src='${userImages[todoDetail.id]}' alt=''>
+                        <img src='${imageURL}' alt=''>
                         <div class='card-body'>
                             <h3 class="card-title">Task: ${todoDetail.description}</h3>
                             <p class="card-text">Category: <span class="fw-bold text-outerSpace">${todoDetail.category}</span></p>
