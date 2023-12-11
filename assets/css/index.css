@@ -17,8 +17,10 @@ nav a {
 
 .container-bg-img {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/hero-image.png");
-    background-size: contain;
-    background-position: center;
+    background-size: 75% ;
+    background-position-x: 75%;
+    background-position-y: 55%;
+
     min-height: 70vh; 
 };
 
@@ -29,6 +31,7 @@ nav a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
   }
   
 .header-column div{
